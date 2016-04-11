@@ -55,14 +55,11 @@ $(document).ready(function () {
 
 
         $(function() {
-      
-      
       function loop(){
        $('.bottom')
          .animate({top:-20},1000)
          .animate({top:-10},1000, loop);
       }
-
     loop();
 
 
@@ -121,7 +118,7 @@ new ScrollMagic.Scene({
 
 
 
-/////////// WOW jS /
+/////////// WOW jS 
 $('.header-main > h1').addClass('wow fadeIn');
 $('.header-main > h3, .header-main > h2, .button-primary ').addClass('wow fadeIn');
 //        $('.col-left').addClass('wow slideInLeft');
