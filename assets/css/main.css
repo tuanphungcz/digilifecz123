@@ -22,18 +22,19 @@ p {
 
 h1 {
     font-weight: 100;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
     color: #3f434a;
 }
 
 .bg {
-    background: url(assets/images/photo-1.jpeg) center center no-repeat;
+/*    background: url(assets/images/photo-1.jpeg) center center no-repeat;*/
+    background-color: #191b1d;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: .83em 0;
     color: #3f434a;
 }
@@ -98,10 +99,11 @@ button {
     background: transparent;
     padding: 15px 25px;
     border: 3px solid #fff;
-    font-weight: 600;
+    font-weight: 700;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     text-transform: uppercase;
+    font-size: 0.9em;
 }
 
 button:hover {
@@ -146,10 +148,11 @@ HEADER
 header {
     color: #fff;
     height: 100vh;
-    background-color: #1e90ff;
+    background-color: #191b1d;
     text-align: center;
     background: url(../images/photo-6.jpg) no-repeat;
     background-size: cover;
+
 }
 
 Header .logo {
@@ -247,7 +250,7 @@ header nav li a:hover {
     opacity: 0.6;
 }
 
-header .bottom {
+header .bottom-arrow {
     position: relative;
 }
 
@@ -260,9 +263,12 @@ About
     border-radius: 50%;
     -khtml-border-radius: 50%;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #fff;
+    margin: 0 20px;
+    position: relative;
+    top: 50px;
 }
 
 #about .flex {
@@ -270,10 +276,7 @@ About
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    
 }
 
 #about .col-1 {
@@ -289,12 +292,14 @@ About
 
 #about h1 {
     color: #424242;
+    font-size: 1.5em
 }
 
 #about .row {}
 
 #about p {
     color: #7f7f7f;
+    padding 20px 0;
 }
 
 
@@ -308,15 +313,14 @@ SKILLS
 }
 
 #skills .content {
-    text-align: center;
-    margin: 0 10px;
+    text-align:center;
+    max-width: 350px;
 }
 
 #skills .flex {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+   -webkit-justify-content: space-around;
+       -ms-flex-pack: distribute;
+           justify-content: space-around
 }
 
 #skills .icon {
@@ -324,7 +328,9 @@ SKILLS
 }
 
 #skills img {
-    width: 100px;
+    width: 70px;
+    opacity: 0.9;
+   
 }
 
 #skills p {
@@ -345,7 +351,7 @@ SKILLS
 
 #skills .col-3 img {
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 
 
@@ -355,19 +361,20 @@ Quote
 
 #quote {
     background-color: rgba(16, 21, 25, 0.15);
+    padding: 100px 0;
 }
 
 .bg-quote {
-    background: url(../images/bg-fixed2.jpeg) no-repeat center center;
+/*    background: url(../images/photo-6.jpg) no-repeat center center;*/
     /*  background-attachment: fixed;*/
     background-size: cover;
+    background-color: #333;
 }
 
 #quote .main {
     text-align: center;
     color: #fff;
     position: relative;
-    padding: 100px 0;
 }
 
 #quote h1 {
@@ -430,20 +437,35 @@ Mobile-showcase
     width: 100%;
 }
 
-#mobile-showcase .mobile-quote h1 {
-    color: #fff;
-}
-
-#mobile-showcase .mobile-quote {
-    text-align: center;
-    color: #fff;
-    position: relative;
-    padding: 50px;
-    background-color: blue;
-}
-
-#mobile-showcase .flex{
+#mobile-showcase .flex {
     padding: 50px 0;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#mobile-showcase {
+    color: #fff;
+}
+
+#mobile-showcase h1 {
+    color: #fff;
+}
+
+#mobile-showcase p {
+    color: #fff;
+}
+
+#mobile-showcase .col-1 {
+    width: 70%;
+}
+
+#mobile-showcase .col-2 {
+    width:30%;
 }
 
 
@@ -452,7 +474,6 @@ Github
 ***********************************/
 
 #github {
-    background-color: #333;
     text-align: center;
 }
 
@@ -465,7 +486,7 @@ Github
 }
 
 #github a:hover {
-    background: #0087cb;
+    background: #000;
     padding: 50px 0;
     -webkit-transition: all 0.5s ease 0;
     transition: all 0.5s ease 0;
@@ -511,6 +532,8 @@ Hire
 }
 
 
+
+
 /**********************************
 Instagram 
 ***********************************/
@@ -523,7 +546,7 @@ Instagram
     width: 18%;
     max-width: 200px;
     margin: 3px;
-/*
+    /*
     opacity: 0.6;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -531,7 +554,7 @@ Instagram
 }
 
 #instagram .col img:hover {
-/*    opacity: 1;*/
+    /*    opacity: 1;*/
 }
 
 #instagram {
@@ -546,7 +569,7 @@ Instagram
 #instagram button {
     text-align: center;
     border: 3px solid;
-    margin: 40px;
+    margin: 40px 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -562,10 +585,12 @@ Contact
     /*  background-attachment: fixed;*/
 }
 
+
 #contact {
     text-align: center;
     padding: 150px 0;
     background-color: rgba(16, 21, 25, 0.15);
+    color: black;
 }
 
 #contact .wrapper {
@@ -586,10 +611,10 @@ Footer
 ***********************************/
 
 footer {
-    background-color: rgba(16, 21, 25, 0.95);
+    background-color: rgba(51, 51, 51,1);
     text-align: center;
     color: #fff;
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 footer p {
@@ -650,13 +675,16 @@ MEDIA QUERIES
     .hide-mobile {
         display: inherit;
     }
+    #quote {
+        padding: 100px 0;
+    }
 }
 
 @media (max-width: 1030px) {}
 
 @media (max-width: 786px) {
     p {
-        font-size: 1em;
+        font-size: 0.8em;
         color: #3f434a;
         line-height: 1.5;
     }
@@ -721,6 +749,7 @@ MEDIA QUERIES
     #hire p {
         font-size: 1.5em;
     }
+    
     #skills .col {
         width: 32%;
     }
@@ -732,6 +761,18 @@ MEDIA QUERIES
     }
     #skills .content {
         margin: 0;
+    }
+    
+    #mobile-showcase .col-1 {
+    width: 100%;
+}
+
+#mobile-showcase .col-2 {
+    width:100%;
+}
+    
+    #quote {
+        padding: 70px 0;
     }
 }
 
@@ -770,13 +811,21 @@ MEDIA QUERIES
     #about {
         text-align: center;
         font-size: .8em;
+        padding: 25px 0;
     }
     #skills {
         text-align: center;
         font-size: .8em;
+        padding: 20px 0;
     }
     #skills .col {
         width: 100%;
+    }
+    #skills h1 {
+        margin: 0;
+    }
+    #skills .col {
+        padding: 10px 0;
     }
     #quote {
         text-align: center;
@@ -785,19 +834,43 @@ MEDIA QUERIES
         text-align: center;
         font-size: .8em;
     }
+    #mobile-showcase .flex {
+        padding: 10px 0 25px 0;
+    }
+    #hire {
+        padding: 100px 0;
+    }
     #hire h1 {
         font-size: 2em;
     }
     #hire p {
         font-size: 1.2em;
     }
+    #instagram {
+        padding: 50px 0;
+    }
+    #instagram button {
+        margin: 20px 0;
+    }
+    #github img {
+        width: 150px;
+    }
+    #github a {
+        padding: 30px 0;
+    }
+    #github a:hover {
+        background: #0087cb;
+        padding: 40px 0;
+    }
     #contact {
         text-align: center;
         font-size: .8em;
+        padding: 60px 0;
     }
     footer {
         text-align: center;
         font-size: .8em;
+        padding: 20px 0;
     }
 }
 
@@ -895,7 +968,9 @@ footer .fa-heart {
 }
 
 
-/* Back to top */
+/**********************************
+BACK-TO-TOP
+***********************************/
 
 #return-to-top {
     position: fixed;

@@ -33,6 +33,14 @@ header nav .flex {
 }
 
 
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
 /* -------------------------------- 
 
 Main components 
@@ -45,7 +53,7 @@ span img {
 
 span.flag {
     position: absolute;
-    right:90px;
+    right: 90px;
     top: 30px;
     cursor: pointer;
 }
@@ -54,7 +62,7 @@ span.flag {
     position: absolute;
     top: 0;
     left: 0;
-    background-color:rgba(2, 23, 37, 0.95);
+    background-color: rgba(0, 0, 0, 0.75);
     height: 50px;
     width: 100%;
     z-index: 3;
@@ -68,7 +76,7 @@ span.flag {
         height: 80px;
         background: transparent;
         box-shadow: none;
-        background: rgba(2, 23, 37, 0.95);
+        background-color: rgba(2, 23, 37, 0.75);
     }
 }
 
@@ -82,15 +90,14 @@ span.flag {
         transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-                background: transparent;
-
-/*        background: rgba(2, 23, 37, 0.95);*/
+        background: transparent;
+        /*        background: rgba(2, 23, 37, 0.95);*/
     }
     .cd-header.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
         top: -80px;
-        background-color: rgba(2, 23, 37, 0.96);
+         background-color: rgba(0, 0, 0, 0.75);
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
     }
@@ -102,7 +109,7 @@ span.flag {
     }
     .cd-header.menu-is-open {
         /* add a background color to the header when the navigation is open */
-        background-color: rgba(2, 23, 37, 0.96);
+         background-color: rgba(0, 0, 0, 0.75);
     }
 }
 
