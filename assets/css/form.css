@@ -2,7 +2,7 @@
 /*****/
 
 .event1 {
-    background: url(../images/bg-gray.jpg);
+    background: url(../images/bg-white.jpg);
     background-size: cover;
 }
 
@@ -28,18 +28,10 @@
     background-size: 100%;
 }
 
-.event3 {
-    background: url(../images/bg-purple.jpg);
-    background-size: cover;
-}
 
-.event3 .image {
-    background: url(../images/macbook-3.png) no-repeat center center;
-    background-size: 100%;
-}
 
 .event4 {
-    background: url(../images/bg-white.jpg);
+    background: url(../images/photo-6.jpg);
     background-size: cover;
 }
 

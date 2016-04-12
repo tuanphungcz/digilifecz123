@@ -406,7 +406,7 @@ Mobile-showcase
 }
 
 #mobile-showcase .section-3 {
-    background: url(../images/bg-gray.jpg) center center no-repeat;
+    background: url(../images/photo-6.jpg) center center no-repeat;
     background-size: cover;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -523,13 +523,15 @@ Instagram
     width: 18%;
     max-width: 200px;
     margin: 3px;
+/*
     opacity: 0.6;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+*/
 }
 
 #instagram .col img:hover {
-    opacity: 1;
+/*    opacity: 1;*/
 }
 
 #instagram {
