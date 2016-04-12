@@ -387,8 +387,10 @@ Mobile-showcase
 *********************/
 
 #mobile-showcase .section-1 {
+/*
     background: url(../images/bg-white.jpg) center center no-repeat;
     background-size: cover;
+*/
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -397,11 +399,14 @@ Mobile-showcase
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: #fff;
 }
 
 #mobile-showcase .section-2 {
+/*
     background: url(../images/bg-dark-purple.jpg) center center no-repeat;
     background-size: cover;
+*/
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -410,11 +415,14 @@ Mobile-showcase
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: #3f434a;
 }
 
 #mobile-showcase .section-3 {
+/*
     background: url(../images/photo-6.jpg) center center no-repeat;
     background-size: cover;
+*/
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -423,6 +431,7 @@ Mobile-showcase
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: #fff; 
 }
 
 #mobile-showcase .section-1 img {
@@ -453,11 +462,19 @@ Mobile-showcase
 }
 
 #mobile-showcase h1 {
-    color: #fff;
+ color: #3f434a;
 }
 
 #mobile-showcase p {
-    color: #fff;
+ color: #3f434a;
+}
+
+#mobile-showcase .section-2 p {
+     color: #fff;
+}
+
+#mobile-showcase .section-2 h1 {
+     color: #fff;
 }
 
 #mobile-showcase .col-1 {
@@ -466,6 +483,16 @@ Mobile-showcase
 
 #mobile-showcase .col-2 {
     width:30%;
+}
+
+#mobile-showcase .section-1 button {
+    border: 3px solid #3f434a;
+    color:#3f434a;
+}
+
+#mobile-showcase .section-3 button {
+    border: 3px solid #3f434a;
+    color:#3f434a;
 }
 
 
