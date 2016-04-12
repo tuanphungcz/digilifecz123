@@ -1,842 +1,935 @@
 /* =============================================================================
    My CSS
    ========================================================================== */
+
+.cz {
+    display: none;
+}
+
+.cz-flag {
+    display: inherit;
+}
+
+.en-flag {
+    display: none;
+}
+
 p {
-  font-size: .9em;
-  color: #3f434a;
-  line-height: 1.5;
+    font-size: .9em;
+    color: #3f434a;
+    line-height: 1.5;
 }
 
 h1 {
-  font-weight: 100;
-  font-size: 2.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #3f434a;
+    font-weight: 100;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3f434a;
 }
 
 .bg {
-  background: url(assets/images/photo-1.jpeg) center center no-repeat;
+    background: url(assets/images/photo-1.jpeg) center center no-repeat;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: .83em 0;
-  color: #3f434a;
+    font-size: 1.5em;
+    margin: .83em 0;
+    color: #3f434a;
 }
 
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-  color: #3f434a;
+    font-size: 1.17em;
+    margin: 1em 0;
+    color: #3f434a;
 }
 
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-  color: #3f434a;
+    font-size: 1em;
+    margin: 1.33em 0;
+    color: #3f434a;
 }
 
 h5 {
-  font-size: .83em;
-  margin: 1.67em 0;
-  color: #3f434a;
+    font-size: .83em;
+    margin: 1.67em 0;
+    color: #3f434a;
 }
 
 h6 {
-  font-size: .75em;
-  margin: 2.33em 0;
-  color: #3f434a;
+    font-size: .75em;
+    margin: 2.33em 0;
+    color: #3f434a;
 }
 
 body {
-  font-family: "Open Sans",sans-serif;
-  background-color: #e9f0f5;
-  opacity: 1;
-  -webkit-transition: 3s opacity;
-  transition: 3s opacity;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e9f0f5;
+    opacity: 1;
+    -webkit-transition: 3s opacity;
+    transition: 3s opacity;
 }
 
 html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-*,:after,:before {
-  box-sizing: border-box;
+*,
+:after,
+:before {
+    box-sizing: border-box;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .wrapper {
-  margin: 0 auto;
-  width: 85%;
-  max-width: 1220px;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1220px;
 }
 
 button {
-  background: transparent;
-  padding: 15px 25px;
-  border: 3px solid #fff;
-  font-weight: 600;
-  -webkit-transition: all .5s ease 0;
-  transition: all .5s ease 0;
-  text-transform: uppercase;
+    background: transparent;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
 }
 
 button:hover {
-  background: #fff;
-  cursor: pointer;
-  color: #000;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
 }
 
 .hide-mobile {
-  display: none;
+    display: none;
 }
 
 .delete {
-  display: none;
+    display: none;
 }
 
 a:link {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 a:visited {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #fff;
+    text-decoration: underline;
+    color: #fff;
 }
 
 a:active {
-  text-decoration: underline;
-  color: #fff;
+    text-decoration: underline;
+    color: #fff;
 }
+
 
 /**********************************
 HEADER
 ***********************************/
+
 header {
-  color: #fff;
-  height: 100vh;
-  background-color: #1e90ff;
-  text-align: center;
-  background: url(../images/photo-6.jpg) no-repeat;
-  background-size: cover;
+    color: #fff;
+    height: 100vh;
+    background-color: #1e90ff;
+    text-align: center;
+    background: url(../images/photo-6.jpg) no-repeat;
+    background-size: cover;
 }
 
 Header .logo {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 header i {
-  position: relative;
-  top: 150px;
+    position: relative;
+    top: 150px;
 }
 
 header nav ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header nav li {
-  list-style: none;
+    list-style: none;
 }
 
 header .flex {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 header nav {
-  width: 90%;
-  max-width: 1080px;
-  margin: auto;
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
 }
 
 header h1 {
-  font-weight: 100;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 3em;
+    font-weight: 100;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
 }
 
 h1.big-header {
-  font-size: 3em;
-  text-align: center;
+    font-size: 3em;
+    text-align: center;
 }
 
 header h2 {
-  font-weight: 100;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  margin: 0;
-  color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
 }
 
 header h3 {
-  font-weight: 100;
-  font-size: 1em;
-  text-transform: uppercase;
-  color: #fff;
-  margin: 30px 0;
+    font-weight: 100;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 30px 0;
 }
 
 header .main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 header .location {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 header .bold {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 header nav li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  -webkit-transition: all .5s ease 0;
-  transition: all .5s ease 0;
-  opacity: .8;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0;
+    opacity: 0.8;
 }
 
 header nav li a:hover {
-  opacity: .6;
+    opacity: 0.6;
 }
 
 header .bottom {
-  position: relative;
+    position: relative;
 }
+
 
 /**********************************
 About
 ***********************************/
+
 #about .profile {
-  border-radius: 50%;
-  -khtml-border-radius: 50%;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  border: 3px solid #fff;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
 }
 
 #about .flex {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #about .col-1 {
-  width: 400px;
-  height: 200px;
+    width: 400px;
+    height: 200px;
 }
 
 #about {
-  background-color: #F5F6FA;
-  padding: 100px 0;
-  position: relative;
+    background-color: #F5F6FA;
+    padding: 100px 0;
+    position: relative;
 }
 
 #about h1 {
-  color: #424242;
+    color: #424242;
 }
 
-#about .row {
-}
+#about .row {}
 
 #about p {
-  color: #7f7f7f;
+    color: #7f7f7f;
 }
+
 
 /**********************************
 SKILLS
 ***********************************/
+
 #skills {
-  background-color: #fff;
-  padding: 100px 0;
+    background-color: #fff;
+    padding: 100px 0;
 }
 
 #skills .content {
-  text-align: center;
-  margin: 0 10px;
+    text-align: center;
+    margin: 0 10px;
 }
 
 #skills .flex {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 #skills .icon {
-  text-align: center;
+    text-align: center;
 }
 
 #skills img {
-  width: 100px;
+    width: 100px;
 }
 
 #skills p {
-  color: #3f434a;
+    color: #3f434a;
 }
 
 #skills h1 {
-  text-align: center;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2em;
+    text-transform: inherit;
 }
 
 #skills h2 {
-  text-transform: uppercase;
-  font-size: 1.5em;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
+
+#skills .col-3 img {
+    position: relative;
+    top: 20px;
+}
+
 
 /**********************************
 Quote
 ***********************************/
+
 #quote {
-  background-color: rgba(16,21,25,0.15);
+    background-color: rgba(16, 21, 25, 0.15);
 }
 
 .bg-quote {
-  background: url(../images/photo-1.jpeg) no-repeat center center;
-  background-attachment: fixed;
-  background-size: cover;
+    background: url(../images/bg-fixed2.jpeg) no-repeat center center;
+    /*  background-attachment: fixed;*/
+    background-size: cover;
 }
 
 #quote .main {
-  text-align: center;
-  color: #fff;
-  position: relative;
-  padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 100px 0;
 }
 
 #quote h1 {
-  color: #fff;
+    color: #fff;
 }
+
 
 /***********************
 Mobile-showcase
 *********************/
+
 #mobile-showcase .section-1 {
-  background: url(../images/bg-white.jpg) center center no-repeat;
-  background-size: cover;
-  height: 700px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    background: url(../images/bg-white.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #mobile-showcase .section-2 {
-  background: url(../images/bg-dark-purple.jpg) center center no-repeat;
-  background-size: cover;
-  height: 700px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    background: url(../images/bg-dark-purple.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #mobile-showcase .section-3 {
-  background: url(../images/bg-gray.jpg) center center no-repeat;
-  background-size: cover;
-  height: 700px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    background: url(../images/bg-gray.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #mobile-showcase .section-1 img {
-  width: 100%;
+    width: 100%;
 }
 
 #mobile-showcase .section-2 img {
-  width: 100%;
+    width: 100%;
 }
 
 #mobile-showcase .section-3 img {
-  width: 100%;
+    width: 100%;
 }
 
 #mobile-showcase .mobile-quote h1 {
-  color: #fff;
+    color: #fff;
 }
 
 #mobile-showcase .mobile-quote {
-  text-align: center;
-  color: #fff;
-  position: relative;
-  padding: 50px;
-  background-color: blue;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 50px;
+    background-color: blue;
 }
+
+#mobile-showcase .flex{
+    padding: 50px 0;
+}
+
 
 /**********************************
 Github 
 ***********************************/
+
 #github {
-  background-color: #333;
-  text-align: center;
+    background-color: #333;
+    text-align: center;
 }
 
 #github a {
-  background: #333;
-  display: block;
-  padding: 45px 0;
-  -webkit-transition: all .5s ease 0;
-  transition: all .5s ease 0;
+    background: #333;
+    display: block;
+    padding: 45px 0;
+    -webkit-transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0s
 }
 
 #github a:hover {
-  background: #0087cb;
-  padding: 60px 0;
-  -webkit-transition: all .5s ease 0;
-  transition: all .5s ease 0;
+    background: #0087cb;
+    padding: 50px 0;
+    -webkit-transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0;
 }
 
 #github img {
-  width: 300px;
+    width: 300px;
 }
+
 
 /**********************************
 Hire 
 ***********************************/
+
 #hire {
-  background: url(../images/hire.jpg) no-repeat center center;
-  background-size: cover;
-  text-align: center;
-  padding: 150px 0;
+    background: url(../images/bg-hire.jpeg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
 }
 
 #hire p {
-  margin: 0;
-  font-size: 2em;
-  color: #fff;
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
 }
 
 #hire h1 {
-  font-size: 4em;
-  color: #fff;
+    font-size: 4em;
+    color: #fff;
 }
 
 #hire .wrapper {
-  max-width: 900px;
+    max-width: 900px;
 }
 
 #hire button {
-  color: #fff;
+    color: #fff;
 }
 
 #hire button:hover {
-  color: #000;
+    color: #000;
 }
+
 
 /**********************************
 Instagram 
 ***********************************/
+
 #instagram {
-  padding: 100px 0;
+    padding: 100px 0;
 }
 
 #instagram .col img {
-  width: 18%;
-  max-width: 200px;
-  margin: 3px;
+    width: 18%;
+    max-width: 200px;
+    margin: 3px;
+    opacity: 0.6;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#instagram .col img:hover {
+    opacity: 1;
 }
 
 #instagram {
-  text-align: center;
-  background-color: #fff;
+    text-align: center;
+    background-color: #fff;
 }
 
 #instagram h1 {
-  margin: 0 0 50px;
+    margin: 0 0 50px;
 }
 
 #instagram button {
-  text-align: center;
-  border: 3px solid #000;
-  margin: 40px;
+    text-align: center;
+    border: 3px solid;
+    margin: 40px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+
 
 /**********************************
 Contact
 ***********************************/
+
 .bg-footer {
-  background: url(../images/photo-1.jpeg) center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background: url(../images/bg-fixed2.jpeg) center center no-repeat;
+    background-size: cover;
+    /*  background-attachment: fixed;*/
 }
 
 #contact {
-  text-align: center;
-  padding: 150px 0;
-  background-color: rgba(16,21,25,0.15);
+    text-align: center;
+    padding: 150px 0;
+    background-color: rgba(16, 21, 25, 0.15);
 }
 
 #contact .wrapper {
-  color: #fff;
+    color: #fff;
 }
 
 #contact h1 {
-  color: #fff;
+    color: #fff;
 }
 
 #contact p {
-  color: #fff;
+    color: #fff;
 }
+
 
 /**********************************
 Footer 
 ***********************************/
+
 footer {
-  background-color: rgba(16,21,25,0.95);
-  text-align: center;
-  color: #fff;
-  padding: 70px 0;
+    background-color: rgba(16, 21, 25, 0.95);
+    text-align: center;
+    color: #fff;
+    padding: 70px 0;
 }
 
 footer p {
-  margin: 0;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .8em;
-  color: #fff;
-  opacity: .8;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8em;
+    color: #fff;
+    opacity: .8;
 }
 
 footer .top {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 footer ul li {
-  list-style-type: none;
-  padding: 10px;
-  display: inline;
+    list-style-type: none;
+    padding: 10px;
+    display: inline;
 }
 
 footer i {
-  color: #fff;
-  opacity: .8;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+    color: #fff;
+    opacity: .8;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 footer i:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 footer ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 footer .row {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
+
 
 /**********************************
 MEDIA QUERIES
 ***********************************/
+
 @media (max-width: 1200px) {
-  .wrapper {
-    width: 90%;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .hide-mobile {
-    display: inherit;
-  }
-
-  #hire h1 {
-    font-size: 3.5em;
-  }
-
-  #hire p {
-    font-size: 1.5em;
-  }
+    .wrapper {
+        width: 90%;
+    }
+    .hide {
+        display: none;
+    }
+    .hide-mobile {
+        display: inherit;
+    }
 }
 
-@media (max-width: 1030px) {
-  
-}
+@media (max-width: 1030px) {}
 
 @media (max-width: 786px) {
-  .cd-header {
-    position: fixed;
-  }
-
-  #mobile-showcase .flex {
-    display: inherit;
-  }
-
-  #mobile-showcase {
-    text-align: center;
-  }
-
-  #about .flex {
-    display: inherit;
-  }
-
-  #about {
-    text-align: center;
-  }
-
-  #about .col-1 {
-    width: auto;
-  }
-
-  #instagram .col img {
-    width: 48%;
-    max-width: 700px;
-  }
-
-  #hire h1 {
-    font-size: 3em;
-  }
-
-  #hire p {
-    font-size: 1.5em;
-  }
+    p {
+        font-size: 1em;
+        color: #3f434a;
+        line-height: 1.5;
+    }
+    h1 {
+        font-weight: 100;
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3f434a;
+    }
+    .bg {
+        background: url(assets/images/photo-1.jpeg) center center no-repeat;
+    }
+    h2 {
+        font-size: 1em;
+        margin: .83em 0;
+        color: #3f434a;
+    }
+    h3 {
+        font-size: 0.9em;
+        margin: 1em 0;
+        color: #3f434a;
+    }
+    h4 {
+        font-size: em;
+        margin: 1.33em 0;
+        color: #3f434a;
+    }
+    span img {
+        width: 22px;
+    }
+    span.flag {
+        position: absolute;
+        right: 70px;
+        top: 16px;
+    }
+    .cd-header {
+        position: fixed;
+    }
+    #mobile-showcase .flex {
+        display: inherit;
+    }
+    #mobile-showcase {
+        text-align: center;
+    }
+    #about .flex {
+        display: inherit;
+    }
+    #about {
+        text-align: center;
+    }
+    #about .col-1 {
+        width: auto;
+    }
+    #instagram .col img {
+        width: 47%;
+        max-width: 700px;
+    }
+    #hire h1 {
+        font-size: 3em;
+    }
+    #hire p {
+        font-size: 1.5em;
+    }
+    #skills .col {
+        width: 32%;
+    }
+    #skills .col img {
+        width: 70px;
+    }
+    #skills h2 {
+        font-size: 0.8em;
+    }
+    #skills .content {
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
-  .flex {
-    display: inherit;
-  }
-
-  header {
-    font-size: .8em;
-  }
-
-  #about {
-    text-align: center;
-    font-size: .8em;
-  }
-
-  #skills {
-    text-align: center;
-    font-size: .8em;
-  }
-
-  #quote {
-    text-align: center;
-  }
-
-  #mobile-showcase {
-    text-align: center;
-    font-size: .8em;
-  }
-
-  #hire h1 {
-    font-size: 2em;
-  }
-
-  #hire p {
-    font-size: 1.2em;
-  }
-
-  #contact {
-    text-align: center;
-    font-size: .8em;
-  }
-
-  footer {
-    text-align: center;
-    font-size: .8em;
-  }
+    p {
+        font-size: 1em;
+        color: #3f434a;
+        line-height: 1.5;
+    }
+    h1 {
+        font-weight: 100;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3f434a;
+    }
+    .bg {
+        background: url(assets/images/photo-1.jpeg) center center no-repeat;
+    }
+    h2 {
+        font-size: 1em;
+        margin: .83em 0;
+        color: #3f434a;
+    }
+    h3 {
+        font-size: 0.8em;
+        margin: 1em 0;
+        color: #3f434a;
+    }
+    .flex {
+        display: inherit;
+    }
+    header {
+        font-size: .8em;
+    }
+    #about {
+        text-align: center;
+        font-size: .8em;
+    }
+    #skills {
+        text-align: center;
+        font-size: .8em;
+    }
+    #skills .col {
+        width: 100%;
+    }
+    #quote {
+        text-align: center;
+    }
+    #mobile-showcase {
+        text-align: center;
+        font-size: .8em;
+    }
+    #hire h1 {
+        font-size: 2em;
+    }
+    #hire p {
+        font-size: 1.2em;
+    }
+    #contact {
+        text-align: center;
+        font-size: .8em;
+    }
+    footer {
+        text-align: center;
+        font-size: .8em;
+    }
 }
+
 
 /**********************************
 HEART PULSE 
 ***********************************/
+
 footer .fa-heart {
-  color: #E3000E;
+    color: #E3000E;
 }
 
 .pulse-heart {
-  -webkit-animation-name: pulse_animation;
-  animation-name: pulse_animation;
-  -webkit-animation-duration: 700ms;
-  animation-duration: 700ms;
-  -webkit-transform-origin: 70% 70%;
-  -ms-transform-origin: 70% 70%;
-  transform-origin: 70% 70%;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+    -webkit-animation-name: pulse_animation;
+    animation-name: pulse_animation;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+    -webkit-transform-origin: 70% 70%;
+    -ms-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse_animation {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  30% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-
-  40% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-  }
-
-  60% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  70% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-  }
-
-  80% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  100% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    40% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    60% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    70% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    80% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
 @keyframes pulse_animation {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  30% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-
-  40% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-  }
-
-  60% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  70% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-  }
-
-  80% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  100% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    40% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    60% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    70% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    80% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
+
 /* Back to top */
+
 #return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #000;
-  background: rgba(0,0,0,0.7);
-  width: 40px;
-  height: 40px;
-  display: block;
-  text-decoration: none;
-  display: none;
-  -webkit-transition: all .3s linear;
-  transition: all .3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s ease;
 }
 
 .return-top {
-  position: absolute;
+    position: absolute;
 }
 
 #return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 10px;
-  top: 5px;
-  font-size: 30px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #return-to-top:hover {
-  background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #return-to-top:hover i {
-  color: #fff;
-  top: 5px;
+    color: #fff;
+    top: 5px;
 }

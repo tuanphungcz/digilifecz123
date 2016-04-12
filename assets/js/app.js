@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         $(function() {
       function loop(){
-       $('.bottom')
+       $('.bottom-arrow')
          .animate({top:-20},1000)
          .animate({top:-10},1000, loop);
       }
@@ -151,4 +151,21 @@ if (isSafari) {
     $("#mobile-showcase").removeClass("hide-mobile");
     $("#website-showcase").addClass("delete");
 };
+    
+    // when click on flag 
+//    $(".flag").on("click", function(){
+//        $(".cz").css("display", "inherit");
+//        $(".en").css("display", "none");
+//        $(".cz-flag").css("display", "none");
+//        $(".en-flag").css("display", "inherit");
+//    })
+    
+    
+    $(".flag").click(function(){
+    $(".cz").toggle();
+        $(".en").toggle();
+        $(".en-flag").toggle();
+        $(".cz-flag").toggle();
+});
+    
 });

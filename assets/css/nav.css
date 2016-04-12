@@ -39,11 +39,22 @@ Main components
 
 -------------------------------- */
 
+span img {
+    width: 20px;
+}
+
+span.flag {
+    position: absolute;
+    right:90px;
+    top: 30px;
+    cursor: pointer;
+}
+
 .cd-header {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(2, 23, 37, 0.95);
+    background-color:rgba(2, 23, 37, 0.95);
     height: 50px;
     width: 100%;
     z-index: 3;
@@ -71,7 +82,9 @@ Main components
         transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        background: rgba(2, 23, 37, 0.95);
+                background: transparent;
+
+/*        background: rgba(2, 23, 37, 0.95);*/
     }
     .cd-header.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
