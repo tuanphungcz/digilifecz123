@@ -110,6 +110,8 @@ $(document).ready(function () {
 //    $('.header-main h2').addClass('wow fadeIn');
 //    $('.button-primary').addClass('wow fadeIn');
 //    $('.fa-angle-down').addClass('wow fadeInUp');
+    
+
 
 
     // ===== Scroll to Top ==== 

@@ -297,7 +297,8 @@ About
 
 #about h1 {
     color: #424242;
-    font-size: 1.2em
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 #about .row {}
@@ -365,8 +366,11 @@ Quote
 ***********************************/
 
 #quote {
-    background-color: rgba(16, 21, 25, 0.15);
+/*    background-color: rgba(16, 21, 25, 0.15);*/
     padding: 100px 0;
+    background: url(../images/bg-hire.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .bg-quote {
@@ -538,6 +542,7 @@ Hire
     background-size: cover;
     text-align: center;
     padding: 150px 0;
+    background-attachment: fixed;
 }
 
 #hire p {
@@ -764,7 +769,16 @@ MEDIA QUERIES
     }
 }
 
-@media (max-width: 1030px) {}
+@media (max-width: 1030px) {
+     #hire {
+    background-attachment:inherit;
+}
+    
+    #quote {
+     background-attachment:inherit;
+
+    }
+}
 
 @media (max-width: 786px) {
     p {
@@ -824,6 +838,9 @@ MEDIA QUERIES
     #hire h1 {
         font-size: 3em;
     }
+    
+   
+    
     #hire p {
         font-size: 1.5em;
     }
@@ -1531,7 +1548,7 @@ Swipe ***********************************/
 }
 
 .event4 .image {
-    background: url(../images/macbook-1.png) no-repeat center center;
+    background: url(../images/macbook-3.png) no-repeat center center;
     background-size: 100%;
 }
 
