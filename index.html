@@ -5,13 +5,12 @@
     <title>My personal webste</title>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700' rel='stylesheet' type='text/css'>
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/form.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/nav.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -27,24 +26,19 @@
             </nav>
             <!-- cd-nav -->
             <a class="cd-primary-nav-trigger" href="#0"><span class="cd-menu-icon"></span></a>
-            <span class="flag">
-            <img class="cz-flag" src="assets/images/Czech-Republic-icon.png" alt="flag-cz">
-            <img class="en-flag" src="assets/images/United-States-icon.png" alt="flag-cz">
-            </span>
+
             <!-- cd-primary-nav-trigger -->
         </div>
         <div class="wrapper">
             <div class="main flex">
                 <div class=" header-main wow fadein">
                     <h2 class="a2 en">Hi, I am <span class="bold">Tuan Phung</span> a self-taught</h2>
-                    <h2 class="a2 cz">Zdravím, jmenuji se <span class="bold">Tuan Phung</span></h2>
                     <h1 class="a1 en">Front End Developer</h1>
-                    <h1 class="a1 cz">Front End Vývojář</h1>
+
                     <h3 class="a2 en">Based in <span class="location">Prague, Czech Republic</span></h3>
-                    <h3 class="a2 cz">Z <span class="location">Prahy</span></h3>
+
                     <a href="#about">
                         <button class="button button-primary a2 en" type="submit">Get to know more</button>
-                        <button class="button button-primary a2 cz" type="submit">Více o mě</button>
                     </a>
                     <a href="#about">
                         <div class="bottom-arrow">
@@ -67,6 +61,9 @@
                     <a class="scroll" href="#quote">Portfolio</a>
                 </li>
                 <li class="close">
+                    <a class="scroll" href="#hire">Hire me</a>
+                </li>
+                <li class="close">
                     <a class="scroll" href="#footer">Contact</a>
                 </li>
             </ul>
@@ -78,7 +75,7 @@
             <div class="row flex">
                 <div class="col col-1"><img alt="profile" class="profile" src="assets/images/profile.png"></div>
                 <div class="col col-2">
-                    <h1>just A front end guy who loves his macbook too much</h1>
+                    <h1>just A front end guy who loves his macbook way too much</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus augue justo, a malesuada tellus molestie vel. Vestibulum vel placerat nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus augue justo, a malesuada tellus molestie vel. Vestibulum vel placerat nisi.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus augue justo, a malesuada tellus molestie vel. Vestibulum vel placerat nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus augue justo, a malesuada tellus molestie vel. Vestibulum vel placerat nisi.</p>
                     <p>Right now, I’m looking for exiting opportunities to push myself through the limits!</p>
@@ -89,7 +86,7 @@
     <!-- Start SKILLS section -->
     <section id="skills">
         <div class="wrapper">
-      
+
             <div class="row flex">
                 <div class="col-2 col col-left col">
                     <div class="icon">
@@ -189,7 +186,7 @@
                     <div class="col col-2">
                         <h1>Tuan for president</h1>
                         <p>lorem upsim upsim upsim upsim upsim upsim upsimupsim lorem upsim upsim upsim upsim upsim upsim upsimupsim lorem upsim upsim upsim upsim upsim upsim upsimupsim</p>
-                        <button>View more on GitHub &#8594;</button>
+                        <button>View more on GitHub</button>
                     </div>
                 </div>
             </div>
@@ -201,13 +198,13 @@
                     <div class="col col-2">
                         <h1>Tuan for president</h1>
                         <p>lorem upsim upsim upsim upsim upsim upsim upsimupsim lorem upsim upsim upsim upsim upsim upsim upsimupsim lorem upsim upsim upsim upsim upsim upsim upsimupsim</p>
-                        <button>View more on GitHub &#8594;</button>
+                        <button>View more on GitHub</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- Start GITHUB section -->
+    <!-- Start GITHUB section -->
     <section id="github">
         <a href=""><img alt="github" src="assets/images/github-logo-white.png"></a>
     </section>
@@ -219,7 +216,9 @@
                 <p>Are you looking for a web developer?</p>
                 <h1>HIRE A front end developer TODAY</h1>
                 <div class="bottom">
-                    <button formaction="mailto:16448321+tuanphungcz@users.noreply.github.com">Click here to contact me</button>
+                    <form>
+                        <button type="submit" formaction="mailto:16448321+tuanphungcz@users.noreply.github.com">Click here to say hello</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -244,22 +243,26 @@
                     <a href=""><img alt="photo" src="assets/images/instagram-10.png"></a>
                 </div>
             </div>
-            <button>Follow my instagram <i class="fa fa-instagram" aria-hidden="true"></i></button>
+            <form>
+                <button target="_blank" formaction="https://www.instagram.com/tuananh94/">Follow my instagram &nbsp; <i class="fa fa-instagram " aria-hidden="true"></i></button>
+            </form>
         </div>
     </section>
-   
+
     <!-- Start CONTACT section -->
     <div class="bg-footer">
         <section id="contact">
             <div class="wrapper">
-                <div class="main get-in-touch">
-                    <h1>Get In Touch</h1>
-                    <p>If you want to collaborate on crafting amazing stuff or you just like to say hello and have a coffee/beer, feel free to get in touch with me!</p>
-                </div>
-                <div class="col-1 col email wow infinite pulse">
-                    <form>
-                        <button formaction="mailto:16448321+tuanphungcz@users.noreply.github.com">Let's go for a coffee</button>
-                    </form>
+                <div class="row flex">
+                    <div class="main get-in-touch">
+                        <h1>Let's talk! Drink or coffee?</h1>
+
+                    </div>
+                    <div class="col-1 col email wow infinite pulse">
+                        <form>
+                            <button formaction="mailto:16448321+tuanphungcz@users.noreply.github.com">Say hello</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -267,45 +270,69 @@
         <footer id="footer">
             <div class="wrapper">
                 <div class="top">
+
+                    <ul class="nav">
+                        <li>
+                            <a class="scroll" href="#header">Home</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#about">About me</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#quote">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#hire">Hire me</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="middle">
+                    <p>&#64; 2016 Tuan Phung / All rights reserved / Front End Developer / Apple lover</p>
+                    <p> Made with <i class="fa fa-heart wow infinite pulse"></i> in Prague, CZ / Credit to unsplash</p>
+                </div>
+
+
+                <div class="bottom">
                     <ul class="row">
                         <li class="col col-1">
-                            <a href=""><i class="fa fa-linkedin fa-1x"></i></a>
+                            <a href="https://cz.linkedin.com/in/tuananhphung" target="_blank"><i class="fa fa-linkedin fa-1x"></i></a>
                         </li>
                         <li class="col col-2">
-                            <a href=""><i class="fa fa-file-text-o fa-21x"></i></a>
+                            <a href="https://cz.linkedin.com/in/tuananhphung" target="_blank"><i class="fa fa-file-text-o fa-1x"></i></a>
                         </li>
                         <li class="col col-3">
-                            <a href=""><i class="fa fa-twitter fa-1x"></i></a>
+                            <a href="https://twitter.com/Phung_cz" target="_blank"><i class="fa fa-twitter fa-1x"></i></a>
                         </li>
                         <li class="col col-4">
-                            <a href=""><i class="fa fa-skype fa-1x"></i></a>
+                            <a href="skype:digilifecz123" target="_blank"><i class="fa fa-skype fa-1x"></i></a>
                         </li>
                         <li class="col col-5">
-                            <a href=""><i class="fa fa-envelope-o fa-1x"></i></a>
+                            <a href="mailto:16448321+tuanphungcz@users.noreply.github.com" target="_blank"><i class="fa fa-envelope-o fa-1x"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="bottom">
-                    <p>&#64;2016 Phung.cz | Made with <i class="fa fa-heart pulse-heart"></i> in Prague | Credit to unsplash</p>
-                </div>
+
+
             </div>
         </footer>
     </div>
     <!-- Start BUTTON-BACK-TO-TOP section -->
     <div class="return-top">
         <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up fa-2x"></i></a>
-        <script src="assets/js/jquery-2.1.1.js">
-        </script>
-        <script src="assets/js/particles.js">
-        </script>
-        <script src="assets/js/particles-js.js">
-        </script>
+        <!--        <script src="assets/js/jquery-2.1.1.js"> </script>-->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!--        <script src="assets/js/ScrollMagic.min.js"> </script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <!--        <script src="assets/js/wow.min.js"> </script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
         <script src="assets/js/app.js">
         </script>
-        <script src="assets/js/ScrollMagic.min.js">
-        </script>
-        <script src="assets/js/wow.min.js">
-        </script>
+
     </div>
 </body>
 

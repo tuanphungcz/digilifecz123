@@ -18,18 +18,21 @@ p {
     font-size: .9em;
     color: #3f434a;
     line-height: 1.5;
+    font-weight: 300;
+    line-height: 2em;
 }
 
 h1 {
     font-weight: 100;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: #3f434a;
+
 }
 
 .bg {
-/*    background: url(assets/images/photo-1.jpeg) center center no-repeat;*/
+    /*    background: url(assets/images/photo-1.jpeg) center center no-repeat;*/
     background-color: #191b1d;
 }
 
@@ -98,7 +101,7 @@ html * {
 button {
     background: transparent;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     font-weight: 700;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -152,7 +155,10 @@ header {
     text-align: center;
     background: url(../images/photo-6.jpg) no-repeat;
     background-size: cover;
+}
 
+header button {
+    color: #fff;
 }
 
 Header .logo {
@@ -276,7 +282,6 @@ About
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    
 }
 
 #about .col-1 {
@@ -292,7 +297,7 @@ About
 
 #about h1 {
     color: #424242;
-    font-size: 1.5em
+    font-size: 1.2em
 }
 
 #about .row {}
@@ -313,14 +318,15 @@ SKILLS
 }
 
 #skills .content {
-    text-align:center;
-    max-width: 350px;
+    text-align: center;
+    max-width: 300px;
 }
 
 #skills .flex {
-   -webkit-justify-content: space-around;
-       -ms-flex-pack: distribute;
-           justify-content: space-around
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #skills .icon {
@@ -330,7 +336,6 @@ SKILLS
 #skills img {
     width: 70px;
     opacity: 0.9;
-   
 }
 
 #skills p {
@@ -346,7 +351,7 @@ SKILLS
 
 #skills h2 {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #skills .col-3 img {
@@ -365,7 +370,7 @@ Quote
 }
 
 .bg-quote {
-/*    background: url(../images/photo-6.jpg) no-repeat center center;*/
+    /*    background: url(../images/photo-6.jpg) no-repeat center center;*/
     /*  background-attachment: fixed;*/
     background-size: cover;
     background-color: #333;
@@ -387,7 +392,7 @@ Mobile-showcase
 *********************/
 
 #mobile-showcase .section-1 {
-/*
+    /*
     background: url(../images/bg-white.jpg) center center no-repeat;
     background-size: cover;
 */
@@ -403,7 +408,7 @@ Mobile-showcase
 }
 
 #mobile-showcase .section-2 {
-/*
+    /*
     background: url(../images/bg-dark-purple.jpg) center center no-repeat;
     background-size: cover;
 */
@@ -419,7 +424,7 @@ Mobile-showcase
 }
 
 #mobile-showcase .section-3 {
-/*
+    /*
     background: url(../images/photo-6.jpg) center center no-repeat;
     background-size: cover;
 */
@@ -431,7 +436,7 @@ Mobile-showcase
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 #mobile-showcase .section-1 img {
@@ -449,12 +454,12 @@ Mobile-showcase
 #mobile-showcase .flex {
     padding: 50px 0;
     -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #mobile-showcase {
@@ -462,19 +467,19 @@ Mobile-showcase
 }
 
 #mobile-showcase h1 {
- color: #3f434a;
+    color: #3f434a;
 }
 
 #mobile-showcase p {
- color: #3f434a;
+    color: #3f434a;
 }
 
 #mobile-showcase .section-2 p {
-     color: #fff;
+    color: #fff;
 }
 
 #mobile-showcase .section-2 h1 {
-     color: #fff;
+    color: #fff;
 }
 
 #mobile-showcase .col-1 {
@@ -482,17 +487,17 @@ Mobile-showcase
 }
 
 #mobile-showcase .col-2 {
-    width:30%;
+    width: 30%;
 }
 
 #mobile-showcase .section-1 button {
-    border: 3px solid #3f434a;
-    color:#3f434a;
+    border: 2px solid #3f434a;
+    color: #3f434a;
 }
 
 #mobile-showcase .section-3 button {
-    border: 3px solid #3f434a;
-    color:#3f434a;
+    border: 2px solid #3f434a;
+    color: #3f434a;
 }
 
 
@@ -513,7 +518,7 @@ Github
 }
 
 #github a:hover {
-    background: #000;
+    background: #0087cb;
     padding: 50px 0;
     -webkit-transition: all 0.5s ease 0;
     transition: all 0.5s ease 0;
@@ -559,8 +564,6 @@ Hire
 }
 
 
-
-
 /**********************************
 Instagram 
 ***********************************/
@@ -595,10 +598,17 @@ Instagram
 
 #instagram button {
     text-align: center;
-    border: 3px solid;
+    border: 2px solid ;
     margin: 40px 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+
+#instagram button:hover {
+    color:#fff;
+    background-color: #663300;
+    border: 2px solid #663300;
 }
 
 
@@ -607,16 +617,17 @@ Contact
 ***********************************/
 
 .bg-footer {
-    background: url(../images/bg-fixed2.jpeg) center center no-repeat;
+    /*
+    background: url(../images/bg-hire.jpeg) center center no-repeat;
     background-size: cover;
+*/
     /*  background-attachment: fixed;*/
+    background-color: #353439;
 }
-
 
 #contact {
     text-align: center;
-    padding: 150px 0;
-    background-color: rgba(16, 21, 25, 0.15);
+    padding: 70px 0;
     color: black;
 }
 
@@ -626,10 +637,31 @@ Contact
 
 #contact h1 {
     color: #fff;
+    margin: 0;
+    text-transform: inherit;
+    font-weight: 300;
 }
 
 #contact p {
     color: #fff;
+}
+
+#contact button:hover {
+    color: #353439;
+}
+
+#contact .flex {
+    justify-content: space-between;
+}
+
+#contact .wrapper {
+    max-width: 1000px;
+}
+
+#contact button {
+    color: #fff;
+    margin: 0;
+    text-transform: inherit;
 }
 
 
@@ -638,42 +670,67 @@ Footer
 ***********************************/
 
 footer {
-    background-color: rgba(51, 51, 51,1);
+    background-color: #26262a;
     text-align: center;
     color: #fff;
     padding: 50px 0;
 }
 
+footer button: {
+    color:
+}
+
 footer p {
     margin: 0;
-    padding: 10px;
-    text-transform: uppercase;
+    padding: 7px;
     letter-spacing: 1px;
     font-size: .8em;
     color: #fff;
-    opacity: .8;
+    opacity: .9;
 }
 
 footer .top {
     padding: 10px 0;
 }
 
-footer ul li {
+footer  ul li {
     list-style-type: none;
-    padding: 10px;
     display: inline;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    opacity: 0.5;
+     -webkit-transition: all 1s ease;
+    transition: all 0.6s ease;
 }
 
-footer i {
-    color: #fff;
-    opacity: .8;
+footer  .nav li {
+    padding: 0 10px;
+}
+
+
+footer ul li a:hover {
+    text-decoration: none;
+}
+
+footer .row i {
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    transition: all 0.6s ease;
+}
+
+footer  ul li i {
+    padding: 10px 5px;
 }
 
 footer i:hover {
     opacity: 1;
 }
+
+footer  ul li:hover {
+    opacity: 1;
+}
+
 
 footer ul {
     padding: 0;
@@ -740,17 +797,11 @@ MEDIA QUERIES
         margin: 1.33em 0;
         color: #3f434a;
     }
-    span img {
-        width: 22px;
-    }
-    span.flag {
-        position: absolute;
-        right: 70px;
-        top: 16px;
-    }
+
     .cd-header {
         position: fixed;
     }
+
     #mobile-showcase .flex {
         display: inherit;
     }
@@ -768,7 +819,7 @@ MEDIA QUERIES
     }
     #instagram .col img {
         width: 47%;
-        max-width: 700px;
+        max-width: 220px;
     }
     #hire h1 {
         font-size: 3em;
@@ -776,7 +827,6 @@ MEDIA QUERIES
     #hire p {
         font-size: 1.5em;
     }
-    
     #skills .col {
         width: 32%;
     }
@@ -789,15 +839,12 @@ MEDIA QUERIES
     #skills .content {
         margin: 0;
     }
-    
     #mobile-showcase .col-1 {
-    width: 100%;
-}
-
-#mobile-showcase .col-2 {
-    width:100%;
-}
-    
+        width: 100%;
+    }
+    #mobile-showcase .col-2 {
+        width: 100%;
+    }
     #quote {
         padding: 70px 0;
     }
@@ -840,6 +887,12 @@ MEDIA QUERIES
         font-size: .8em;
         padding: 25px 0;
     }
+    
+        
+    #skills .content {
+    text-align: center;
+    max-width: 480px;
+}
     #skills {
         text-align: center;
         font-size: .8em;
@@ -886,13 +939,16 @@ MEDIA QUERIES
         padding: 30px 0;
     }
     #github a:hover {
-        background: #0087cb;
         padding: 40px 0;
     }
     #contact {
         text-align: center;
         font-size: .8em;
         padding: 60px 0;
+    }
+    
+    #contact h1 {
+        margin: 20px 0;
     }
     footer {
         text-align: center;
@@ -1036,4 +1092,542 @@ BACK-TO-TOP
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+/**********************************
+Navigation bar
+***********************************/
+
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+body {
+    font-size: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgba(2, 23, 37, 0.7);
+    background-color: white;
+}
+
+body.overflow-hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow: hidden;
+}
+
+header nav button {
+    padding: 7px 25px;
+}
+
+header nav .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+span img {
+    width: 20px;
+}
+
+span.flag {
+    position: absolute;
+    right: 90px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.cd-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-header {
+        height: 80px;
+        background: transparent;
+        box-shadow: none;
+        background-color: rgba(2, 23, 37, 0.75);
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-header {
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background: transparent;
+        /*        background: rgba(2, 23, 37, 0.95);*/
+    }
+    .cd-header.is-fixed {
+        /* when the user scrolls down, we hide the header right above the viewport */
+        position: fixed;
+        top: -80px;
+        background-color: rgba(0, 0, 0, 0.75);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+    }
+    .cd-header.is-visible {
+        /* if the user changes the scrolling direction, we show the header */
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    .cd-header.menu-is-open {
+        /* add a background color to the header when the navigation is open */
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.cd-logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: .875em;
+}
+
+.cd-logo img {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-logo {
+        left: 2.6em;
+    }
+}
+
+.cd-secondary-nav {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*  right: 10em; */
+    /*move this to left or right*/
+    left: 1em;
+    /* hidden on small devices */
+    display: none;
+}
+
+.cd-secondary-nav li {
+    display: inline-block;
+    margin-left: 2.2em;
+}
+
+.cd-secondary-nav a {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-secondary-nav {
+        display: block;
+    }
+}
+
+.cd-primary-nav-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #03263d;
+}
+
+.cd-primary-nav-trigger .cd-menu-text {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* hide the text on small devices */
+    display: none;
+}
+
+.cd-primary-nav-trigger .cd-menu-icon {
+    /* this span is the central line of the menu icon */
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* these are the upper and lower lines in the menu icon */
+}
+
+.cd-primary-nav-trigger .cd-menu-icon::before,
+.cd-primary-nav-trigger .cd-menu-icon:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+    transition: transform .3s, top .3s, background-color 0s;
+}
+
+.cd-primary-nav-trigger .cd-menu-icon::before {
+    top: -5px;
+}
+
+.cd-primary-nav-trigger .cd-menu-icon::after {
+    top: 5px;
+}
+
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before,
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+    background-color: white;
+}
+
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+    top: 0;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-primary-nav-trigger {
+        width: 100px;
+        padding-left: 1em;
+        background-color: transparent;
+        height: 30px;
+        line-height: 30px;
+        right: 2.2em;
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .cd-primary-nav-trigger .cd-menu-text {
+        display: inline-block;
+    }
+    .cd-primary-nav-trigger .cd-menu-icon {
+        left: auto;
+        right: 1em;
+        -webkit-transform: translateX(0) translateY(-50%);
+        -ms-transform: translateX(0) translateY(-50%);
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+.cd-primary-nav {
+    /* by default it's hidden - on top of the viewport */
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(2, 23, 37, 0.96);
+    z-index: 2;
+    text-align: center;
+    padding: 50px 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: auto;
+    /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.cd-primary-nav li {
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: .2em 0;
+    text-transform: capitalize;
+}
+
+.cd-primary-nav a {
+    display: inline-block;
+    padding: .4em 1em;
+    border-radius: 0.25em;
+     transition: all 0.5s ease;
+}
+
+.no-touch .cd-primary-nav a:hover {
+    background-color: #fff;
+}
+
+.cd-primary-nav .cd-label {
+    color: #06446e;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin: 2.4em 0 .8em;
+}
+
+.cd-primary-nav .cd-social {
+    display: inline-block;
+    margin: 0 .4em;
+}
+
+.cd-primary-nav .cd-social a {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-image: url("../img/cd-socials.svg");
+    background-repeat: no-repeat;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.cd-primary-nav .cd-facebook a {
+    background-position: 0 0;
+}
+
+.cd-primary-nav .cd-instagram a {
+    background-position: -44px 0;
+}
+
+.cd-primary-nav .cd-dribbble a {
+    background-position: -88px 0;
+}
+
+.cd-primary-nav .cd-twitter a {
+    background-position: -132px 0;
+}
+
+.cd-primary-nav.is-visible {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-primary-nav {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-primary-nav li {
+        font-size: 30px;
+        font-size: 1.875rem;
+    }
+    .cd-primary-nav .cd-label {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+}
+
+
+/**********************************
+Swipe ***********************************/
+
+.event1 {
+    /*
+     background: url(../images/photo-6.jpg);
+    background-size: cover;
+*/
+    background-color: #fff;
+}
+
+.event1 .image {
+    top: 50%;
+    left: 30%;
+    background: url(../images/macbook-1.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.event1 .text-container {
+    top: 40%;
+    right: 80%;
+}
+
+.event2 {
+    /*
+    background: url(../images/bg-dark-purple.jpg);
+    background-size: cover;
+*/
+    background-color: #3f434a;
+}
+
+.event2 .image {
+    background: url(../images/macbook-2.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.event4 {
+    /*
+    background: url(../images/photo-6.jpg);
+    background-size: cover;
+*/
+    background-color: #fff;
+}
+
+.event4 .image {
+    background: url(../images/macbook-1.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.image {
+    top: -50%;
+    left: 30%;
+    background-size: contain;
+    position: relative;
+    margin-top: -375px;
+    margin-left: -375px;
+    height: 750px;
+    width: 60%;
+}
+
+.text-container {
+    top: -60%;
+    left: 80%;
+    background-size: contain;
+    position: relative;
+    margin-top: -375px;
+    margin-left: -275px;
+    height: 500px;
+    width: 30%;
+}
+
+.text-container p {
+    color: #fff;
+}
+
+.text-container h1 {
+    color: #fff;
+}
+
+.event1 .text-container p,
+.event4 .text-container p {
+    color: #3f434a;
+}
+
+.event1 .text-container h1,
+.event4 .text-container h1 {
+    color: #3f434a;
+}
+
+.pinWrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.event {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.scrollmagic-pin-spacer {
+    position: absolute !important;
+    clip: rect(auto, auto, auto, auto);
+    top: 100px;
+}
+
+.event1 button {
+    border-color: #3f434a;
+    color: #3f434a;
+}
+
+.event2 button {
+    border-color: #fff;
+    color: #fff;
+}
+
+.event3 button {
+    border-color: #fff;
+    color: #fff;
+}
+
+.event4 button {
+    border-color: #3f434a;
+    color: #3f434a;
+}
+
+.a1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.a2 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.a3 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
