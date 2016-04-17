@@ -15,7 +15,7 @@
 }
 
 p {
-	font-size: .9em;
+	font-size: 0.92em;
 	color: #3f434a;
 	line-height: 1.5;
 	font-weight: 300;
@@ -85,6 +85,21 @@ html * {
 }
 
 .flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-c {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -178,17 +193,6 @@ header nav li {
 	list-style: none;
 }
 
-header .flex {
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
 header nav {
 	width: 90%;
 	max-width: 1080px;
@@ -276,13 +280,6 @@ About
 	top: 50px;
 }
 
-#about .flex {
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-
 #about .col-1 {
 	width: 400px;
 	height: 200px;
@@ -319,14 +316,14 @@ SKILLS
 
 #skills .content {
 	text-align: center;
-	max-width: 300px;
+	max-width: 500px;
+	margin: 10px;
 }
 
-#skills .flex {
+#skills .row {
 	-webkit-justify-content: space-around;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	align-items: center;
 }
 
 #skills .main.flex {
@@ -356,12 +353,19 @@ SKILLS
 
 #skills h2 {
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
-#skills .col-3 img {
-	position: relative;
-	top: 10px;
+#skills button {
+	border: 2px solid #3f434a;
+	color: #3f434a;
+	padding: 12px 20px;
+	font-size: 0.8em;
+}
+
+#skills button:hover {
+	color: #fff;
+	background-color: #3f434a;
 }
 
 
@@ -372,7 +376,7 @@ Quote
 #quote {
 	/*    background-color: rgba(16, 21, 25, 0.15);*/
 	padding: 100px 0;
-	background: url(../images/bg-hire.jpeg);
+	background: url(../images/bg-hire.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -400,50 +404,14 @@ Mobile-showcase
 *********************/
 
 #mobile-showcase .section-1 {
-	/*
-    background: url(../images/bg-white.jpg) center center no-repeat;
-    background-size: cover;
-*/
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
 	background-color: #fff;
 }
 
 #mobile-showcase .section-2 {
-	/*
-    background: url(../images/bg-dark-purple.jpg) center center no-repeat;
-    background-size: cover;
-*/
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
 	background-color: #3f434a;
 }
 
 #mobile-showcase .section-3 {
-	/*
-    background: url(../images/photo-6.jpg) center center no-repeat;
-    background-size: cover;
-*/
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
 	background-color: #fff;
 }
 
@@ -459,15 +427,8 @@ Mobile-showcase
 	width: 100%;
 }
 
-#mobile-showcase .flex {
+#mobile-showcase .row {
 	padding: 50px 0;
-	-webkit-align-content: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
 }
 
 #mobile-showcase {
@@ -527,7 +488,7 @@ Github
 
 #github a:hover {
 	background: #0087cb;
-	padding: 50px 0;
+	padding: 65px 0;
 	-webkit-transition: all 0.5s ease 0;
 	transition: all 0.5s ease 0;
 }
@@ -542,7 +503,7 @@ Hire
 ***********************************/
 
 #hire {
-	background: url(../images/bg-hire.jpeg) no-repeat center center;
+	background: url(../images/bg-hire.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	padding: 150px 0;
@@ -556,12 +517,12 @@ Hire
 }
 
 #hire h1 {
-	font-size: 4em;
+	font-size: 3em;
 	color: #fff;
 }
 
 #hire .wrapper {
-	max-width: 900px;
+	max-width: 700px;
 }
 
 #hire button {
@@ -847,16 +808,13 @@ MEDIA QUERIES
 		font-size: 1.5em;
 	}
 	#skills .col {
-		width: 32%;
+		width: 50%;
 	}
 	#skills .col img {
 		width: 70px;
 	}
 	#skills h2 {
 		font-size: 0.8em;
-	}
-	#skills .content {
-		margin: 0;
 	}
 	#mobile-showcase .col-1 {
 		width: 100%;
@@ -1513,14 +1471,14 @@ Swipe ***********************************/
 
 .event1 .image {
 	top: 50%;
-	left: 30%;
+	left: 40%;
 	background: url(../images/macbook-1.png) no-repeat center center;
 	background-size: 100%;
 }
 
 .event1 .text-container {
-	top: 40%;
-	right: 80%;
+	top: 35%;
+	right: 85%;
 }
 
 .event2 {
@@ -1551,24 +1509,24 @@ Swipe ***********************************/
 
 .image {
 	top: -50%;
-	left: 30%;
+	left: 40%;
 	background-size: contain;
 	position: relative;
 	margin-top: -375px;
 	margin-left: -375px;
 	height: 750px;
-	width: 60%;
+	width: 45%;
 }
 
 .text-container {
-	top: -60%;
-	left: 80%;
+	top: -65%;
+	left: 85%;
 	background-size: contain;
 	position: relative;
 	margin-top: -375px;
-	margin-left: -275px;
+	margin-left: -375px;
 	height: 500px;
-	width: 30%;
+	max-width: 450px;
 }
 
 .text-container p {
