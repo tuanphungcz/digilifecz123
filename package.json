@@ -1,0 +1,25 @@
+{
+  "name": "website_phung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digilifecz123/website_Phung.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digilifecz123/website_Phung/issues"
+  },
+  "homepage": "https://github.com/digilifecz123/website_Phung#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.0"
+  }
+}
