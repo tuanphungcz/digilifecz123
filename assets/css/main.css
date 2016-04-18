@@ -106,7 +106,6 @@ html * {
 	display: flex;
 }
 
-
 .wrapper {
 	margin: 0 auto;
 	width: 85%;
@@ -305,7 +304,6 @@ About
 	padding 20px 0;
 }
 
-
 #about .webmium {
 	color: #1E9BCA;
 	font-weight: 700;
@@ -319,7 +317,6 @@ About
 #about .bold {
 	font-weight: 700;
 }
-
 
 
 /**********************************
@@ -469,11 +466,11 @@ Mobile-showcase
 }
 
 #mobile-showcase .col-1 {
-	width: 70%;
+	width: 60%;
 }
 
 #mobile-showcase .col-2 {
-	width: 30%;
+	width: 40%;
 }
 
 #mobile-showcase .section-1 button {
@@ -610,13 +607,11 @@ Instagram
 Contact
 ***********************************/
 
-
 #contact {
 	text-align: center;
 	padding: 70px 0;
 	color: black;
 	background-color: #353439;
-
 }
 
 #contact .wrapper {
@@ -748,6 +743,9 @@ MEDIA QUERIES
 	#quote {
 		padding: 100px 0;
 	}
+	#mobile-showcase h1 {
+		font-size: 1.5em;
+	}
 }
 
 @media (max-width: 1030px) {
@@ -875,7 +873,6 @@ MEDIA QUERIES
 		font-size: .8em;
 		padding: 25px 0;
 	}
-	
 	header i {
 		top: 50px;
 	}
@@ -952,92 +949,6 @@ HEART PULSE
 footer .fa-heart {
 	color: #E3000E;
 }
-
-.pulse-heart {
-	-webkit-animation-name: pulse_animation;
-	animation-name: pulse_animation;
-	-webkit-animation-duration: 700ms;
-	animation-duration: 700ms;
-	-webkit-transform-origin: 70% 70%;
-	-ms-transform-origin: 70% 70%;
-	transform-origin: 70% 70%;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse_animation {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	30% {
-		-webkit-transform: scale(1.05);
-		transform: scale(1.05);
-	}
-	40% {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	50% {
-		-webkit-transform: scale(1.15);
-		transform: scale(1.15);
-	}
-	60% {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	70% {
-		-webkit-transform: scale(1.15);
-		transform: scale(1.15);
-	}
-	80% {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	100% {
-		-webkit-transform: scale(1.05);
-		transform: scale(1.05);
-	}
-}
-
-@keyframes pulse_animation {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	30% {
-		-webkit-transform: scale(1.05);
-		transform: scale(1.05);
-	}
-	40% {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	50% {
-		-webkit-transform: scale(1.15);
-		transform: scale(1.15);
-	}
-	60% {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	70% {
-		-webkit-transform: scale(1.15);
-		transform: scale(1.15);
-	}
-	80% {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-	100% {
-		-webkit-transform: scale(1.05);
-		transform: scale(1.05);
-	}
-}
-
-
 /**********************************
 BACK-TO-TOP
 ***********************************/
@@ -1244,9 +1155,11 @@ span.flag {
 
 .cd-secondary-nav a {
 	display: inline-block;
-	color: white;
+	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
+	letter-spacing: 4px;
+	font-size: 0.8em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1600,4 +1513,3 @@ Swipe ***********************************/
 	border-color: #3f434a;
 	color: #3f434a;
 }
-
