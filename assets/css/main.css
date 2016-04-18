@@ -106,6 +106,7 @@ html * {
 	display: flex;
 }
 
+
 .wrapper {
 	margin: 0 auto;
 	width: 85%;
@@ -305,19 +306,35 @@ About
 }
 
 
+#about .webmium {
+	color: #1E9BCA;
+	font-weight: 700;
+}
+
+#about .vodafone {
+	color: #ff0000;
+	font-weight: 700;
+}
+
+#about .bold {
+	font-weight: 700;
+}
+
+
+
 /**********************************
 SKILLS
 ***********************************/
 
 #skills {
 	background-color: #fff;
-	padding: 50px 0;
+	padding: 70px 0;
 }
 
 #skills .content {
 	text-align: center;
 	max-width: 500px;
-	margin: 10px;
+	margin: 20px;
 }
 
 #skills .row {
@@ -593,19 +610,13 @@ Instagram
 Contact
 ***********************************/
 
-.bg-footer {
-	/*
-    background: url(../images/bg-hire.jpeg) center center no-repeat;
-    background-size: cover;
-*/
-	/*  background-attachment: fixed;*/
-	background-color: #353439;
-}
 
 #contact {
 	text-align: center;
 	padding: 70px 0;
 	color: black;
+	background-color: #353439;
+
 }
 
 #contact .wrapper {
@@ -864,6 +875,10 @@ MEDIA QUERIES
 		font-size: .8em;
 		padding: 25px 0;
 	}
+	
+	header i {
+		top: 50px;
+	}
 	#skills .content {
 		text-align: center;
 		max-width: 480px;
@@ -1032,9 +1047,9 @@ BACK-TO-TOP
 	bottom: 20px;
 	right: 20px;
 	background: #000;
-	background: rgba(0, 0, 0, 0.7);
-	width: 40px;
-	height: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	width: 50px;
+	height: 50px;
 	display: block;
 	text-decoration: none;
 	display: none;
@@ -1050,8 +1065,8 @@ BACK-TO-TOP
 	color: #fff;
 	margin: 0;
 	position: relative;
-	left: 10px;
-	top: 5px;
+	left: 15px;
+	top: 10px;
 	font-size: 30px;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
@@ -1535,6 +1550,7 @@ Swipe ***********************************/
 
 .text-container h1 {
 	color: #fff;
+	font-size: 1.5em;
 }
 
 .event1 .text-container p,
@@ -1585,21 +1601,3 @@ Swipe ***********************************/
 	color: #3f434a;
 }
 
-.a1 {
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-}
-
-.a2 {
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-}
-
-.a3 {
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-}
