@@ -310,7 +310,7 @@ About
 }
 
 #about .vodafone {
-	color: #ff0000;
+	color: rgb(201, 0, 0);
 	font-weight: 700;
 }
 
@@ -379,7 +379,12 @@ SKILLS
 
 #skills button:hover {
 	color: #fff;
-	background-color: #3f434a;
+	background-color: #0087cb;
+	border-color: #0087cb;
+}
+
+#skills i {
+	font-size: 17px;
 }
 
 
@@ -662,6 +667,8 @@ footer {
 footer button: {
 	color:
 }
+
+
 
 footer p {
 	margin: 0;
@@ -1004,12 +1011,7 @@ Primary style
 
 -------------------------------- */
 
-body {
-	font-size: 100%;
-	font-family: "Source Sans Pro", sans-serif;
-	color: rgba(2, 23, 37, 0.7);
-	background-color: white;
-}
+
 
 body.overflow-hidden {
 	/* when primary navigation is visible, the content in the background won't scroll */
