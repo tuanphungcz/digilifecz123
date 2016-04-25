@@ -123,6 +123,10 @@ button:hover {
 	display: none;
 }
 
+.hide {
+	display: none;
+}
+
 a:link {
 	text-decoration: none;
 	color: #fff;
